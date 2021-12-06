@@ -1,0 +1,10 @@
+[{
+  "_id": {
+    "$oid": "61974533f4101f54acdd7c5d"
+  },
+  "firstName": "Balu Harish Reddy",
+  "lastName": "Maddireddy",
+  "email": "bmaddire@uncc.edu",
+  "password": "$2b$10$f86hwD1ss3Czef4jQg2W6OutX6niOxvHAdHzTAQUIu4B.hr2gWZt.",
+  "__v": 0
+}]
