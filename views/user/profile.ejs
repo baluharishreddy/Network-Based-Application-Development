@@ -1,0 +1,43 @@
+<%- include('../partials/header.ejs')%>
+    <div class="content-user">
+        <h1>Welcome,
+            <%=user.firstName%>
+        </h1>
+        <% if (categoryNames) { %>
+            <p> You have created the following events</p><br/>
+            <div class="profile">
+                <table class='profile-table'>
+                    <tr>
+                        <th>Events</th>
+                        <th>Category</th>
+                        <th>Actions</th>
+                    </tr>
+                    <% for(var i=0; i<categoryNames.length; i++){ %>
+                        <% for(var j=0; j<events.length; j++){
+            if(events[j].category == categoryNames[i]){ %>
+                            <tr>
+                                <td>
+                                    <a href='/events/<%= events[j].id%>'>
+                                        <%=events[j].event_title%>
+                                    </a>
+                                </td>
+                                <td>
+                                    <%= categoryNames[i]%>
+                                </td>
+                                <td>
+                                    <form>
+                                        <button type="submit" formmethod="GET" formaction="/events/<%= events[j].id%>/edit">Update</button>
+                                        <button type="submit" formmethod="POST" formaction="/events/<%= events[j].id%>?_method=DELETE">Delete</button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <%}
+            }%>
+                                <%} %>
+                </table>
+                <%} else{ %>
+                    <p> You have not created any events to display</p>
+                    <% } %>
+            </div>
+    </div>
+    <%- include('../partials/footer.ejs')%>

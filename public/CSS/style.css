@@ -1,0 +1,163 @@
+@charset "UTF-8";
+header,
+div,
+footer,
+main,
+article,
+nav {
+    display: block;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-image: url('/Images/fall.jpg');
+    
+}
+
+.caption,
+.mainfoot {
+    background-color: rgb(2, 49, 2);
+    color: cornsilk;
+    text-align: center;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    font-style:normal;
+    font-size: 20px;
+}
+
+.list li,
+.foot li,
+.foot1 li {
+    display: inline;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.list li a,
+.foot li a,
+.foot1 li a {
+    color: whitesmoke;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.list {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.foot {
+    float: left;
+}
+
+.foot1 {
+    float: right;
+}
+
+.mainfoot {
+    position: absolute;
+    bottom: 0%;
+    width: 99%;
+    padding-left: 0.1%;
+    padding-right: 0.1%;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+    color: cornsilk;
+}
+
+.maindiv {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    color:cornsilk;
+    font-weight: bolder;
+    font-size: 25px;
+    list-style: none;
+}
+
+#para a {
+    float: left;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.image {
+    float: left;
+    position: relative;
+    padding-left: 0.25%;
+    padding-right: 0.5%;
+    padding-top: 0.25%;
+    padding-bottom: 0.25%;
+}
+
+.eventmain li a,
+.eventmain1 li a {
+    color: black;
+    font-weight: lighter;
+}
+
+.eventmain li,
+.eventmain1 li {
+    color: black;
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+
+.connect {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+aside {
+    float: right;
+    position: relative;
+    padding-right: 7%;
+}
+
+.connect button {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.reg {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+.connections_class li a,.subcategory1 ,.content, .Footer_ele{
+    color: white;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+#logo{
+    width: 100px;
+    height:105px;
+}
+
+#image1{
+    width:250px;
+    height:200px;
+}
+
+#face, #twt{
+    width: 25px;
+    height: 25px;
+}
+
+.buttons{
+    float: right;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<title>UNC Charlotte</title>
+        <link rel="stylesheet" type="text/CSS" href="/css/style.css">
+        <div class="image">
+            <a href="/"><img src="/Images/logo_corner.jpg" alt="logo_corner" id="logo"></a>
+        </div>
+        <div class="caption">
+    
+            <h1>UNC Charlotte</h1>
+            <hr>
+            <h2 id="para"><a href="/events">Departments</a></h2>
+            <div class="list">
+                <nav>
+                    <ul>
+
+            <%if(!user){%>
+                <li> <a href='/users/new'>Sign Up |</a></li>
+                <li> <a href='/users/login'>Login</a></li>
+                <%}
+                else{%>
+                    <li> <a href="/events/new"> Add Portal | </a></li>
+                    <li> <a href='/users/profile'>Profile |</a></li>
+                    <li> <a href='/users/logout'>Logout</a></li>
+                    <%}%>
+        </ul>
+    </div>
+</div>
+<% if(errorMessages.length > 0) {%>
+    <% errorMessages.forEach(message=>{%>
+        <div class='error'>
+            <%=message%>
+        </div>
+        <%});%>
+            <%}%>
+
+                <% if(successMessages.length > 0) {%>
+
+                    <% successMessages.forEach(message=>{%>
+                        <div class='success'>
+                            <%=message%>
+                        </div>
+                        <%});%>
+                            <%}%>

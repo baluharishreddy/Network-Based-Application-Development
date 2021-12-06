@@ -1,0 +1,51 @@
+<%- include("../partials/header.ejs")%>
+
+        <div class ="content">
+            <h2>UPDATE EVENT DETAILS</h2>
+            <br>
+            <form method = "POST" action = "/events/<%= event.id%>?_method=PUT">
+                <table>
+                    <tr>
+                        <td><label for="name">Name</label></td>
+                        <td><input type="text" id="name" name="name" value="<%= event.name%>" class="fixed-width"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="head">Head</label></td>
+                        <td><input type="text" id="head" name="head" value="<%= event.head%>" class="fixed-width"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dean">Dean</label></td>
+                        <td><input type="text" id="dean" name="dean" value="<%= event.dean%>" class="fixed-width"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="start_time">Start time</label></td>
+                        <td><input type="time" id="start_time" name="start_time" value="<%= event.start_time%>"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="end_time">End time</label></td>
+                        <td><input type="time" id="end_time" name="end_time" value="<%= event.end_time%>"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="contact">Contact</label></td>
+                        <td><input type="text" id="contact" name="contact" value="<%= event.contact%>" class="fixed-width"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="location">Location</label></td>
+                        <td><input type="text" id="location" name="location" value="<%= event.location%>" class="fixed-width"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="image">Image</label></td>
+                        <td><input type="text" name="image" id="image" value="<%= event.image%>" class="fixed-width"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Description">Description</label></td>
+                        <td><textarea name="Description" id="Description" rows="5" cols="50"><%= event.Description%></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="UPDATE" id="submit"></td>
+                    </tr>
+                </table>   
+            </form>       
+        </div>
+
+<%- include("../partials/footer.ejs")%>
